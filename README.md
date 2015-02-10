@@ -37,3 +37,4 @@
 <li><p>Linux Kernel stable version 19
 <br><br></p></li>
 </ul>
+<p><em>*Also it upgrades all the included packages to the latest version</em></p>
