@@ -136,6 +136,9 @@ wget https://dl.dropboxusercontent.com/u/25024443/pop/Popcorn-Time
 wget https://dl.dropboxusercontent.com/u/25024443/pop/package.nw
 wget https://dl.dropboxusercontent.com/u/25024443/pop/nw.pak
 wget https://dl.dropboxusercontent.com/u/25024443/pop/libffmpegsumo.so
+cd ..
+chmod 777 Popcorn-Time/ -R
+chmod 777 Nestopia-ROMS/ -R
 echo ""
 echo ""
 #Download and install the Linux Kernel 3.19
