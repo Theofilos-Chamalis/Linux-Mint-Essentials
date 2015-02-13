@@ -23,7 +23,8 @@
 <li><p>Wine</p></li>
 <li><p>Oracle java (and makes it default instead of OpenJDK)</p></li>
 <li><p>LibreOffice (the old installed version is removed)</p></li>
-<li><p>Tor browser</p></li>
+<li><p>Bleachbit (CCleaner alternative for Linux)</p></li>
+<li><p>Tor browser (A browser focused on Internet anonymity)</p></li>
 <li><p>Sublime text2</p></li>
 <li><p>Spotify</p></li>
 <li><p>Numix theme and icons</p></li>
