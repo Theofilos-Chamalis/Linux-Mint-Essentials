@@ -70,7 +70,7 @@ echo "."
 sleep 2
 echo ""
 echo ""
-apt-get update
+apt-get -q -y -m update
 echo ""
 echo ""
 #Starting installations
@@ -102,7 +102,8 @@ apt-get -q -y install spotify-client
 apt-get -q -y install nestopia
 apt-get -q -y install teamviewer
 apt-get -q -y purge libreoffice*
-apt-get -q -y install libreoffice 
+apt-get -q -y install libreoffice
+apt-get -q -y install bleachbit 
 echo ""
 echo ""
 #Download software directly from internet
@@ -175,10 +176,10 @@ echo "."
 sleep 2
 echo ""
 echo ""
-apt-get -q -y upgrade
-apt-get -q -y dist-upgrade
-apt-get -q -y autoclean
-apt-get -q -y autoremove
+apt-get -q -y -m -f upgrade
+apt-get -q -y -m -f dist-upgrade
+apt-get -q -y -m autoclean
+apt-get -q -y -m -f autoremove
 echo ""
 echo ""
 echo "                   The script has finished yay!!! ... finally :p "
