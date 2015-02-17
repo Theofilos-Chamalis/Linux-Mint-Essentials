@@ -176,7 +176,6 @@ echo "."
 sleep 2
 echo ""
 echo ""
-apt-get -q -y -m -f upgrade
 apt-get -q -y -m -f dist-upgrade
 apt-get -q -y -m autoclean
 apt-get -q -y -m -f autoremove
