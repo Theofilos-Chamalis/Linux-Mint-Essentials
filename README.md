@@ -2,7 +2,7 @@
     <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1>
 <a id="user-content-linux-mint-essentials" class="anchor" href="#linux-mint-essentials" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linux-Mint-Essentials</h1>
 
-<p>This script was originally created to set up a trouble free linux mint laptop for my girlfriend because even a distro like Linux Mint lacks some essential software and thought I should share it here for anyone to use it freely.
+<p>This script was originally created to set up a linux mint laptop for my girlfriend easily and trouble free because even a distro like Linux Mint lacks some essential software and thought I should share it here for anyone to use it freely. Enjoy!
 <br><br><br></p>
 
 <h3>
@@ -11,7 +11,7 @@
 <p><strong>Just download it and run the command sh Linux-Mint-Essentials.sh</strong></p>
 
 <p><em>* Note that you must be root for it to work (type su and enter your password before you begin)</em></p>
-<p><em>All the procedure is executed automatically. At the end of the script you will be prompted to enter your password again if you want to reboot and apply all the changes, or press Ctr+C to cancel and reboot manually later.</em></p>
+<p><em>All the procedure is executed automatically! At the end of the script you will be prompted to enter your password again if you want to reboot and apply all the changes, or press Ctr+C to cancel and reboot manually later.</em></p>
 
 <p><em>Tested in Linux-Mint 64bit and therefore working in all ubuntu-like 64bit distros.</em>
 <br><br><br></p>
