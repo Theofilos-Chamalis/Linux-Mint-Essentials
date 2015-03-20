@@ -11,6 +11,7 @@
 <p><strong>Just download it and run the command sh Linux-Mint-Essentials.sh</strong></p>
 
 <p><em>* Note that you must be root for it to work (type su and enter your password before you begin)</em></p>
+<p><em>All the procedure is executed automatically. At the end of the script you will be prompted to enter your password again if you want to reboot and apply all the changes, or press Ctr+C to cancel and reboot manually later.</em></p>
 
 <p><em>Tested in Linux-Mint 64bit and therefore working in all ubuntu-like 64bit distros.</em>
 <br><br><br></p>
@@ -24,6 +25,7 @@
 <li><p>Oracle java (and makes it default instead of OpenJDK)</p></li>
 <li><p>LibreOffice (the old installed version is removed)</p></li>
 <li><p>Bleachbit (CCleaner alternative for Linux)</p></li>
+<li><p>Filezilla</p></li>
 <li><p>Tor browser (A browser focused on Internet anonymity)</p></li>
 <li><p>Sublime text2</p></li>
 <li><p>Spotify</p></li>
