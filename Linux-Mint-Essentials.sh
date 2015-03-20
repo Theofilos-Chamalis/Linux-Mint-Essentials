@@ -87,7 +87,7 @@ sleep 2
 echo ""
 echo ""
 apt-get -q -y install grub-customizer
-apt-get -q -y install conky-manager curl
+apt-get -q -y install conky-all curl python-feedparser
 apt-get -q -y install wine1.7
 apt-get -q -y install oracle-java8-installer oracle-java8-set-default
 apt-get -q -y install tor-browser
@@ -103,7 +103,8 @@ apt-get -q -y install nestopia
 apt-get -q -y install teamviewer
 apt-get -q -y purge libreoffice*
 apt-get -q -y install libreoffice
-apt-get -q -y install bleachbit 
+apt-get -q -y install bleachbit
+apt-get -q -y install filezilla 
 echo ""
 echo ""
 #Download software directly from internet
@@ -133,19 +134,19 @@ chmod 777 Popcorn-Time/ -R
 cd Nestopia-ROMS/
 wget https://dl.dropboxusercontent.com/u/25024443/supermario.nes
 cd ../Popcorn-Time/
-wget https://dl.dropboxusercontent.com/u/25024443/pop/Popcorn-Time
-wget https://dl.dropboxusercontent.com/u/25024443/pop/package.nw
-wget https://dl.dropboxusercontent.com/u/25024443/pop/nw.pak
-wget https://dl.dropboxusercontent.com/u/25024443/pop/libffmpegsumo.so
+wget http://31.7.184.36/build/Popcorn-Time-0.3.7.2-Linux64.tar.xz
+chmod 777 Popcorn-Time-0.3.7.2-Linux64.tar.xz -R
+tar xf Popcorn-Time-0.3.7.2-Linux64.tar.xz
+rm -rf Popcorn-Time-0.3.7.2-Linux64.tar.xz
 cd ..
 chmod 777 Popcorn-Time/ -R
 chmod 777 Nestopia-ROMS/ -R
 echo ""
 echo ""
-#Download and install the Linux Kernel 3.19
+#Download and install the Linux Kernel 3.19.2
 #===============================================================================
 echo "*******************************"
-echo "Install Linux Kernel 3.19 "
+echo "Install Linux Kernel 3.19.2 "
 sleep 2
 echo "..."
 sleep 2
@@ -156,10 +157,10 @@ sleep 2
 echo ""
 echo ""
 cd /tmp/
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.19-vivid/linux-headers-3.19.0-031900-generic_3.19.0-031900.201502091451_amd64.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.19-vivid/linux-headers-3.19.0-031900_3.19.0-031900.201502091451_all.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.19-vivid/linux-image-3.19.0-031900-generic_3.19.0-031900.201502091451_amd64.deb
-dpkg -i --force-all linux-headers-3.19.0-*.deb linux-image-3.19.0-*.deb
+wget http://http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.19.2-vivid/linux-headers-3.19.2-031902-generic_3.19.2-031902.201503181436_amd64.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.19.2-vivid/linux-headers-3.19.2-031902_3.19.2-031902.201503181436_all.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.19.2-vivid/linux-image-3.19.2-031902-generic_3.19.2-031902.201503181436_amd64.deb
+dpkg -i --force-all linux-headers-3.19.2-*.deb linux-image-3.19.2-*.deb
 echo ""
 echo ""
 #Upgrade existing Linux Mint software
@@ -181,6 +182,28 @@ apt-get -q -y -m autoclean
 apt-get -q -y -m -f autoremove
 echo ""
 echo ""
+#Making some final adjustments for flair weather
+#===============================================================================
+echo "*******************************"
+echo "Making some final adjustments for flair weather"
+sleep 2
+echo "..."
+sleep 2
+echo ".."
+sleep 2
+echo "."
+sleep 2
+echo ""
+echo ""
+wget https://dl.dropboxusercontent.com/u/25024443/Flair_Weather.zip
+chmod 777 Flair_Weather.zip -R
+exit
+mv Flair_Weather.zip /home/$USER/.conky
+cd /home/$USER/.conky
+unzip Flair_Weather.zip
+rm -rf Flair_Weather.zip
+echo ""
+echo ""
 echo "                   The script has finished yay!!! ... finally :p "
 echo "*******************************************************************************"
 echo "==============================================================================="
@@ -193,48 +216,8 @@ echo "*****************"
 echo " "
 echo " "
 echo " "
-echo "Rebooting shortly..."
-sleep 2
-echo "Rebooting shortly.."
-sleep 2
-echo "Rebooting shortly."
+echo "Enter password if you want to reboot now or press Ctr+C to cancel it and reboot manually later..."
 sleep 2
 echo ""
 echo ""
-reboot
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+sudo reboot

@@ -35,7 +35,7 @@
 <li><p>Viber</p></li>
 <li><p>Popcorn Time (P2P streaming program to watch Movies-TV series-Anime)</p></li>
 <li><p>Conky and flair (weather widget-you must manually activate it-find your WOEID aka location ID at weather.yahoo.com and in conky manager highlight the Flair Widget, click the pencil icon and replace the current location id (the one in { } ) /forecastrss?w={1103816}&amp;u=c )</p></li>
-<li><p>Linux Kernel stable version 19
+<li><p>Linux Kernel stable version 19.2
 <br><br></p></li>
 </ul>
 <p><em>*Also it upgrades all the included packages to the latest version</em></p>
