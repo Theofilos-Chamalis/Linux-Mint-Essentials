@@ -49,6 +49,7 @@ add-apt-repository ppa:danielrichter2007/grub-customizer -y
 add-apt-repository -y ppa:teejee2008/ppa -y
 add-apt-repository -y ppa:libreoffice/ppa -y
 add-apt-repository -y ppa:ubuntu-wine/ppa -y
+add-apt-repository ppa:atareao/atareao
 add-apt-repository -y ppa:webupd8team/java -y
 add-apt-repository -y ppa:webupd8team/tor-browser -y
 dd-apt-repository -y ppa:webupd8team/sublime-text-2 -y
@@ -87,7 +88,6 @@ sleep 2
 echo ""
 echo ""
 apt-get -q -y install grub-customizer
-apt-get -q -y install conky-all curl python-feedparser
 apt-get -q -y install wine1.7
 apt-get -q -y install oracle-java8-installer oracle-java8-set-default
 apt-get -q -y install tor-browser
@@ -105,6 +105,7 @@ apt-get -q -y purge libreoffice*
 apt-get -q -y install libreoffice
 apt-get -q -y install bleachbit
 apt-get -q -y install filezilla 
+apt-get -q -y install my-weather-indicator
 echo ""
 echo ""
 #Download software directly from internet
@@ -143,10 +144,10 @@ chmod 777 Popcorn-Time/ -R
 chmod 777 Nestopia-ROMS/ -R
 echo ""
 echo ""
-#Download and install the Linux Kernel 3.19.2
+#Download and install the Linux Kernel 4.0
 #===============================================================================
 echo "*******************************"
-echo "Install Linux Kernel 3.19.2 "
+echo "Install Linux Kernel 4.0 "
 sleep 2
 echo "..."
 sleep 2
@@ -157,10 +158,10 @@ sleep 2
 echo ""
 echo ""
 cd /tmp/
-wget http://http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.19.2-vivid/linux-headers-3.19.2-031902-generic_3.19.2-031902.201503181436_amd64.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.19.2-vivid/linux-headers-3.19.2-031902_3.19.2-031902.201503181436_all.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.19.2-vivid/linux-image-3.19.2-031902-generic_3.19.2-031902.201503181436_amd64.deb
-dpkg -i --force-all linux-headers-3.19.2-*.deb linux-image-3.19.2-*.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.0-vivid/linux-headers-4.0.0-040000_4.0.0-040000.201504121935_all.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.0-vivid/linux-headers-4.0.0-040000-generic_4.0.0-040000.201504121935_amd64.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.0-vivid/linux-image-4.0.0-040000-generic_4.0.0-040000.201504121935_amd64.deb
+dpkg -i linux-headers-4.0.0-*.deb linux-image-4.0.0-*.deb
 echo ""
 echo ""
 #Upgrade existing Linux Mint software
@@ -182,10 +183,13 @@ apt-get -q -y -m autoclean
 apt-get -q -y -m -f autoremove
 echo ""
 echo ""
-#Making some final adjustments for flair weather
-#===============================================================================
-echo "*******************************"
-echo "Making some final adjustments for flair weather"
+echo "                   The script has finished yay!!! ... finally :p "
+echo "*******************************************************************************"
+echo "==============================================================================="
+sleep 5
+echo ""
+echo ""
+echo "Rebooting now"
 sleep 2
 echo "..."
 sleep 2
@@ -195,29 +199,9 @@ echo "."
 sleep 2
 echo ""
 echo ""
-wget https://dl.dropboxusercontent.com/u/25024443/Flair_Weather.zip
-chmod 777 Flair_Weather.zip -R
-exit
-mv Flair_Weather.zip /home/$USER/.conky
-cd /home/$USER/.conky
-unzip Flair_Weather.zip
-rm -rf Flair_Weather.zip
-echo ""
-echo ""
-echo "                   The script has finished yay!!! ... finally :p "
-echo "*******************************************************************************"
-echo "==============================================================================="
-sleep 5
-echo ""
-echo ""
 echo "*****************"
 echo "Bye!!!"
 echo "*****************"
 echo " "
 echo " "
-echo " "
-echo "Enter password if you want to reboot now or press Ctr+C to cancel it and reboot manually later..."
-sleep 2
-echo ""
-echo ""
-sudo reboot
+reboot
