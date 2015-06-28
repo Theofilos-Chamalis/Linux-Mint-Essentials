@@ -158,10 +158,10 @@ sleep 2
 echo ""
 echo ""
 cd /tmp/
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.0-vivid/linux-headers-4.0.0-040000_4.0.0-040000.201504121935_all.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.0-vivid/linux-headers-4.0.0-040000-generic_4.0.0-040000.201504121935_amd64.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.0-vivid/linux-image-4.0.0-040000-generic_4.0.0-040000.201504121935_amd64.deb
-dpkg -i linux-headers-4.0.0-*.deb linux-image-4.0.0-*.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1-unstable/linux-headers-4.1.0-040100-generic_4.1.0-040100.201506220235_amd64.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1-unstable/linux-headers-4.1.0-040100_4.1.0-040100.201506220235_all.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1-unstable/linux-image-4.1.0-040100-generic_4.1.0-040100.201506220235_amd64.deb
+dpkg -i linux-headers-4.1.0-*.deb linux-image-4.1.0-*.deb
 echo ""
 echo ""
 #Upgrade existing Linux Mint software
