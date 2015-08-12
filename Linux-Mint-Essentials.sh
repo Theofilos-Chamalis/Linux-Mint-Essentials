@@ -135,19 +135,19 @@ chmod 777 Popcorn-Time/ -R
 cd Nestopia-ROMS/
 wget https://dl.dropboxusercontent.com/u/25024443/supermario.nes
 cd ../Popcorn-Time/
-wget http://31.7.184.36/build/Popcorn-Time-0.3.7.2-Linux64.tar.xz
-chmod 777 Popcorn-Time-0.3.7.2-Linux64.tar.xz -R
-tar xf Popcorn-Time-0.3.7.2-Linux64.tar.xz
-rm -rf Popcorn-Time-0.3.7.2-Linux64.tar.xz
+wget https://get.popcorntime.io/build/Popcorn-Time-0.3.8-2-Linux-64.tar.xz
+chmod 777 Popcorn-Time-0.3.8-2-Linux-64.tar.xz -R
+tar xf Popcorn-Time-0.3.8-2-Linux-64.tar.xz
+rm -rf Popcorn-Time-0.3.8-2-Linux-64.tar.xz
 cd ..
 chmod 777 Popcorn-Time/ -R
 chmod 777 Nestopia-ROMS/ -R
 echo ""
 echo ""
-#Download and install the Linux Kernel 4.0
+#Download and install the Linux Kernel 4.1.5
 #===============================================================================
 echo "*******************************"
-echo "Install Linux Kernel 4.0 "
+echo "Install Linux Kernel 4.1.5"
 sleep 2
 echo "..."
 sleep 2
@@ -158,10 +158,10 @@ sleep 2
 echo ""
 echo ""
 cd /tmp/
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1-unstable/linux-headers-4.1.0-040100-generic_4.1.0-040100.201506220235_amd64.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1-unstable/linux-headers-4.1.0-040100_4.1.0-040100.201506220235_all.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1-unstable/linux-image-4.1.0-040100-generic_4.1.0-040100.201506220235_amd64.deb
-dpkg -i linux-headers-4.1.0-*.deb linux-image-4.1.0-*.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.5-unstable/linux-headers-4.1.5-040105-generic_4.1.5-040105.201508101730_amd64.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.5-unstable/linux-headers-4.1.5-040105_4.1.5-040105.201508101730_all.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.5-unstable/linux-image-4.1.5-040105-generic_4.1.5-040105.201508101730_amd64.deb
+dpkg -i linux-headers-4.1.5-*.deb linux-image-4.1.5-*.deb
 echo ""
 echo ""
 #Upgrade existing Linux Mint software
