@@ -147,7 +147,7 @@ echo ""
 #Download and install the Linux Kernel 4.1.5
 #===============================================================================
 echo "*******************************"
-echo "Install Linux Kernel 4.1.5"
+echo "Install Linux Kernel 4.1.6"
 sleep 2
 echo "..."
 sleep 2
@@ -158,9 +158,9 @@ sleep 2
 echo ""
 echo ""
 cd /tmp/
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.5-unstable/linux-headers-4.1.5-040105-generic_4.1.5-040105.201508101730_amd64.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.5-unstable/linux-headers-4.1.5-040105_4.1.5-040105.201508101730_all.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.5-unstable/linux-image-4.1.5-040105-generic_4.1.5-040105.201508101730_amd64.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.6-unstable/linux-headers-4.1.6-040106-generic_4.1.6-040106.201508170230_amd64.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.6-unstable/	linux-headers-4.1.6-040106_4.1.6-040106.201508170230_all.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.6-unstable/linux-image-4.1.6-040106-generic_4.1.6-040106.201508170230_amd64.deb
 dpkg -i linux-headers-4.1.5-*.deb linux-image-4.1.5-*.deb
 echo ""
 echo ""
