@@ -144,10 +144,10 @@ chmod 777 Popcorn-Time/ -R
 chmod 777 Nestopia-ROMS/ -R
 echo ""
 echo ""
-#Download and install the Linux Kernel 4.1.5
+#Download and install the Linux Kernel 4.2.0
 #===============================================================================
 echo "*******************************"
-echo "Install Linux Kernel 4.1.6"
+echo "Install Latest Linux Kernel v4.2.0"
 sleep 2
 echo "..."
 sleep 2
@@ -158,10 +158,10 @@ sleep 2
 echo ""
 echo ""
 cd /tmp/
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.6-unstable/linux-headers-4.1.6-040106-generic_4.1.6-040106.201508170230_amd64.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.6-unstable/	linux-headers-4.1.6-040106_4.1.6-040106.201508170230_all.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.6-unstable/linux-image-4.1.6-040106-generic_4.1.6-040106.201508170230_amd64.deb
-dpkg -i linux-headers-4.1.5-*.deb linux-image-4.1.5-*.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.2-unstable/linux-headers-4.2.0-040200-generic_4.2.0-040200.201508301530_amd64.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.2-unstable/linux-headers-4.2.0-040200_4.2.0-040200.201508301530_all.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.2-unstable/linux-image-4.2.0-040200-generic_4.2.0-040200.201508301530_amd64.deb
+dpkg -i linux-headers-4.2.0-*.deb linux-image-4.2.0-*.deb
 echo ""
 echo ""
 #Upgrade existing Linux Mint software
