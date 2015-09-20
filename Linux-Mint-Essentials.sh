@@ -124,10 +124,16 @@ echo ""
 echo ""
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 wget http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
+wget http://mirrors.kernel.org/ubuntu/pool/main/n/ndg-httpsclient/python-ndg-httpsclient_0.3.2-1ubuntu4_all.deb
+wget http://codingteam.net/project/googleplaydownloader/download/file/googleplaydownloader_1.7-1_all.deb
 dpkg -i --force-all google-chrome-stable_current_amd64.deb
 dpkg -i --force-all viber.deb
+dpkg -i --force-all python-ndg-httpsclient_0.3.2-1ubuntu4_all.deb
+dpkg -i --force-all googleplaydownloader_1.7-1_all.deb
 rm -rf google-chrome-stable_current_amd64.deb
 rm -rf viber.deb
+rm -rf python-ndg-httpsclient_0.3.2-1ubuntu4_all.deb
+rm -rf googleplaydownloader_1.7-1_all.deb
 mkdir Popcorn-Time
 mkdir Nestopia-ROMS
 chmod 777 Nestopia-ROMS/ -R
