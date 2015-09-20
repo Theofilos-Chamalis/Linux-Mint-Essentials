@@ -36,6 +36,7 @@
 <li><p>Google Chrome (Google's web browser)</p></li>
 <li><p>Viber (A very popular instant messaging client that can be synced with mobile devices)</p></li>
 <li><p>Popcorn Time (P2P streaming program to watch Movies-TV series-Anime)</p></li>
+<li><p>GooglePlayDownloader (A very easy way to download Android apks from Google Play store to the PC)</p></li>
 <li><p>My-weather-indicator (weather widget which can be docked on the desktop or the taskbar and has many UI and functionality options to suit your needs)</p></li>
 <li><p>Linux Kernel version 4.1.7
 <br><br></p></li>
