@@ -45,15 +45,15 @@ echo "."
 sleep 2
 echo ""
 echo ""
-add-apt-repository ppa:danielrichter2007/grub-customizer -y
+add-apt-repository -y ppa:danielrichter2007/grub-customizer -y
 add-apt-repository -y ppa:teejee2008/ppa -y
 add-apt-repository -y ppa:libreoffice/ppa -y
 add-apt-repository -y ppa:ubuntu-wine/ppa -y
-add-apt-repository ppa:atareao/atareao
+add-apt-repository -y ppa:atareao/atareao -y
 add-apt-repository -y ppa:webupd8team/java -y
 add-apt-repository -y ppa:webupd8team/tor-browser -y
 dd-apt-repository -y ppa:webupd8team/sublime-text-2 -y
-add-apt-repository ppa:numix/ppa -y
+add-apt-repository -y ppa:numix/ppa -y
 sh -c 'echo "deb http://repository.spotify.com/ stable non-free" > /etc/apt/sources.list.d/spotify.list'
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2C19886 -y
 echo ""
