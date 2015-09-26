@@ -55,7 +55,7 @@ add-apt-repository -y ppa:webupd8team/tor-browser -y
 dd-apt-repository -y ppa:webupd8team/sublime-text-2 -y
 add-apt-repository ppa:numix/ppa -y
 sh -c 'echo "deb http://repository.spotify.com/ stable non-free" > /etc/apt/sources.list.d/spotify.list'
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59 -y
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2C19886 -y
 echo ""
 echo ""
 #Update sources
