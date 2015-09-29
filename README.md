@@ -38,7 +38,7 @@
 <li><p>Popcorn Time (P2P streaming program to watch Movies-TV series-Anime)</p></li>
 <li><p>GooglePlayDownloader (A very easy way to download Android apks from Google Play store to the PC)</p></li>
 <li><p>My-weather-indicator (weather widget which can be docked on the desktop or the taskbar and has many UI and functionality options to suit your needs)</p></li>
-<li><p>Linux Kernel version 4.1.8
+<li><p>Linux Kernel version 4.1.9
 <br><br></p></li>
 </ul>
 <p><em>*Also it upgrades all the included packages and programs of your system to the latest version</em></p>
