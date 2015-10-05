@@ -150,10 +150,10 @@ chmod 777 Popcorn-Time/ -R
 chmod 777 Nestopia-ROMS/ -R
 echo ""
 echo ""
-#Download and install the Linux Kernel 4.1.8
+#Download and install the Linux Kernel 4.1.10 LTS
 #===============================================================================
 echo "*******************************"
-echo "Install Latest Linux Kernel v4.1.8"
+echo "Install Latest LTS (Long Term Support) Linux Kernel v4.1.10"
 sleep 2
 echo "..."
 sleep 2
@@ -164,10 +164,10 @@ sleep 2
 echo ""
 echo ""
 cd /tmp/
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.9-unstable/linux-headers-4.1.9-040109-generic_4.1.9-040109.201509291430_amd64.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.9-unstable/linux-headers-4.1.9-040109_4.1.9-040109.201509291430_all.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.9-unstable/linux-image-4.1.9-040109-generic_4.1.9-040109.201509291430_amd64.deb
-dpkg -i linux-headers-4.1.9-*.deb linux-image-4.1.9-*.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.10-unstable/linux-headers-4.1.10-040110-generic_4.1.10-040110.201510030837_amd64.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.10-unstable/linux-headers-4.1.10-040110_4.1.10-040110.201510030837_all.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.10-unstable/linux-image-4.1.10-040110-generic_4.1.10-040110.201510030837_amd64.deb
+dpkg -i linux-headers-4.1.10-*.deb linux-image-4.1.10-*.deb
 echo ""
 echo ""
 #Upgrade existing Linux Mint software
