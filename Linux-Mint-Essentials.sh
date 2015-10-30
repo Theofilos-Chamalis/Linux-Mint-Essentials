@@ -47,15 +47,23 @@ echo ""
 echo ""
 add-apt-repository -y ppa:danielrichter2007/grub-customizer -y
 add-apt-repository -y ppa:teejee2008/ppa -y
-add-apt-repository -y ppa:libreoffice/ppa -y
 add-apt-repository -y ppa:ubuntu-wine/ppa -y
 add-apt-repository -y ppa:atareao/atareao -y
 add-apt-repository -y ppa:webupd8team/java -y
 add-apt-repository -y ppa:webupd8team/tor-browser -y
-dd-apt-repository -y ppa:webupd8team/sublime-text-2 -y
+add-apt-repository -y ppa:webupd8team/sublime-text-2 -y
 add-apt-repository -y ppa:numix/ppa -y
 sh -c 'echo "deb http://repository.spotify.com/ stable non-free" > /etc/apt/sources.list.d/spotify.list'
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2C19886 -y
+#Remove old libreoffice and install newest version (works also on Linux Mint)
+#===============================================================================
+apt-get -q -y purge libreoffice*
+>/etc/apt/preferences.d/libreoffice-libreoffice-5-0.pref
+chmod 777 libreoffice-libreoffice-5-0.pref
+echo "Package: *" >> /etc/apt/preferences.d/libreoffice-libreoffice-5-0.pref
+echo "Pin: release o=LP-PPA-libreoffice-libreoffice-5-0" >> /etc/apt/preferences.d/libreoffice-libreoffice-5-0.pref
+echo "Pin-Priority: 701" >> /etc/apt/preferences.d/libreoffice-libreoffice-5-0.pref
+add-apt-repository -y ppa:libreoffice/libreoffice-5-0 -y
 echo ""
 echo ""
 #Update sources
@@ -101,11 +109,10 @@ apt-get -q -y install numix-gtk-theme
 apt-get -q -y install spotify-client
 apt-get -q -y install nestopia
 apt-get -q -y install teamviewer
-apt-get -q -y purge libreoffice*
-apt-get -q -y install libreoffice
 apt-get -q -y install bleachbit
 apt-get -q -y install filezilla 
 apt-get -q -y install my-weather-indicator
+apt-get -q -y install libreoffice-style-breeze
 echo ""
 echo ""
 #Download software directly from internet
@@ -134,26 +141,18 @@ rm -rf google-chrome-stable_current_amd64.deb
 rm -rf viber.deb
 rm -rf python-ndg-httpsclient_0.3.2-1ubuntu4_all.deb
 rm -rf googleplaydownloader_1.7-1_all.deb
-mkdir Popcorn-Time
 mkdir Nestopia-ROMS
 chmod 777 Nestopia-ROMS/ -R
-chmod 777 Popcorn-Time/ -R
 cd Nestopia-ROMS/
 wget https://dl.dropboxusercontent.com/u/25024443/supermario.nes
-cd ../Popcorn-Time/
-wget https://get.popcorntime.io/build/Popcorn-Time-0.3.8-5-Linux-64.tar.xz
-chmod 777 Popcorn-Time-0.3.8-5-Linux-64.tar.xz -R
-tar xf Popcorn-Time-0.3.8-5-Linux-64.tar.xz
-rm -rf Popcorn-Time-0.3.8-5-Linux-64.tar.xz
 cd ..
-chmod 777 Popcorn-Time/ -R
 chmod 777 Nestopia-ROMS/ -R
 echo ""
 echo ""
 #Download and install the Linux Kernel 4.1.10 LTS
 #===============================================================================
 echo "*******************************"
-echo "Install Latest LTS (Long Term Support) Linux Kernel v4.1.10"
+echo "Install Latest LTS (Long Term Support) Linux Kernel v4.1.12 willy"
 sleep 2
 echo "..."
 sleep 2
@@ -164,10 +163,10 @@ sleep 2
 echo ""
 echo ""
 cd /tmp/
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.10-unstable/linux-headers-4.1.10-040110-generic_4.1.10-040110.201510030837_amd64.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.10-unstable/linux-headers-4.1.10-040110_4.1.10-040110.201510030837_all.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.10-unstable/linux-image-4.1.10-040110-generic_4.1.10-040110.201510030837_amd64.deb
-dpkg -i linux-headers-4.1.10-*.deb linux-image-4.1.10-*.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.12-wily/linux-headers-4.1.12-040112-generic_4.1.12-040112.201510262131_amd64.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.12-wily/linux-headers-4.1.12-040112_4.1.12-040112.201510262131_all.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.12-wily/linux-image-4.1.12-040112-generic_4.1.12-040112.201510262131_amd64.deb
+dpkg -i linux-headers-4.1.12-*.deb linux-image-4.1.12-*.deb
 echo ""
 echo ""
 #Upgrade existing Linux Mint software
@@ -208,6 +207,6 @@ echo ""
 echo "*****************"
 echo "Bye!!!"
 echo "*****************"
-echo " "
-echo " "
+echo ""
+echo ""
 reboot
