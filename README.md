@@ -23,7 +23,7 @@
 <li><p>Grub-Customizer (GRUB menu configuring)</p></li>
 <li><p>Wine (run Windows applications on Linux)</p></li>
 <li><p>Oracle java (and makes it default instead of OpenJDK)</p></li>
-<li><p>LibreOffice (Microsoft Office alternative. The old installed version is removed)</p></li>
+<li><p>LibreOffice latest version with new theme (Microsoft Office alternative. The old installed version is removed)</p></li>
 <li><p>Bleachbit (CCleaner alternative for Linux to remove junk files and speed up the system)</p></li>
 <li><p>Filezilla (FTP file transfer client)</p></li>
 <li><p>Tor browser (A browser focused on Internet anonymity)</p></li>
@@ -35,10 +35,9 @@
 <li><p>Nestopia (NES emulator and Super Mario Bros ROM)</p></li>
 <li><p>Google Chrome (Google's web browser)</p></li>
 <li><p>Viber (A very popular instant messaging client that can be synced with mobile devices)</p></li>
-<li><p>Popcorn Time (P2P streaming program to watch Movies-TV series-Anime)</p></li>
 <li><p>GooglePlayDownloader (A very easy way to download Android apks from Google Play store to the PC)</p></li>
 <li><p>My-weather-indicator (weather widget which can be docked on the desktop or the taskbar and has many UI and functionality options to suit your needs)</p></li>
-<li><p>Linux Kernel version 4.1.10 LTS (Long Term Support)
+<li><p>Linux Kernel version 4.1.12 willy LTS (Long Term Support)
 <br><br></p></li>
 </ul>
 <p><em>*Also it upgrades all the included packages and programs of your system to the latest version</em></p>
