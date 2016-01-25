@@ -96,7 +96,7 @@ sleep 2
 echo ""
 echo ""
 apt-get -q -y install grub-customizer
-apt-get -q -y install wine1.7
+apt-get -q -y install wine1.8
 apt-get -q -y install oracle-java8-installer oracle-java8-set-default
 apt-get -q -y install tor-browser
 apt-get -q -y install sublime-text
@@ -132,15 +132,15 @@ echo ""
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 wget http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
 wget http://mirrors.kernel.org/ubuntu/pool/main/n/ndg-httpsclient/python-ndg-httpsclient_0.3.2-1ubuntu4_all.deb
-wget http://codingteam.net/project/googleplaydownloader/download/file/googleplaydownloader_1.7-1_all.deb
+wget http://codingteam.net/project/googleplaydownloader/download/file/googleplaydownloader_1.8-1.deb
 dpkg -i --force-all google-chrome-stable_current_amd64.deb
 dpkg -i --force-all viber.deb
 dpkg -i --force-all python-ndg-httpsclient_0.3.2-1ubuntu4_all.deb
-dpkg -i --force-all googleplaydownloader_1.7-1_all.deb
+dpkg -i --force-all googleplaydownloader_1.8-1.deb
 rm -rf google-chrome-stable_current_amd64.deb
 rm -rf viber.deb
 rm -rf python-ndg-httpsclient_0.3.2-1ubuntu4_all.deb
-rm -rf googleplaydownloader_1.7-1_all.deb
+rm -rf googleplaydownloader_1.8-1.deb
 mkdir Nestopia-ROMS
 chmod 777 Nestopia-ROMS/ -R
 cd Nestopia-ROMS/
@@ -149,10 +149,10 @@ cd ..
 chmod 777 Nestopia-ROMS/ -R
 echo ""
 echo ""
-#Download and install the Linux Kernel 4.1.10 LTS
+#Download and install the Linux Kernel 4.1.16 LTS
 #===============================================================================
 echo "*******************************"
-echo "Install Latest LTS (Long Term Support) Linux Kernel v4.1.12 willy"
+echo "Install Latest LTS (Long Term Support) Linux Kernel v4.1.16 willy"
 sleep 2
 echo "..."
 sleep 2
@@ -163,10 +163,10 @@ sleep 2
 echo ""
 echo ""
 cd /tmp/
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.12-wily/linux-headers-4.1.12-040112-generic_4.1.12-040112.201510262131_amd64.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.12-wily/linux-headers-4.1.12-040112_4.1.12-040112.201510262131_all.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.12-wily/linux-image-4.1.12-040112-generic_4.1.12-040112.201510262131_amd64.deb
-dpkg -i linux-headers-4.1.12-*.deb linux-image-4.1.12-*.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.16-wily/linux-headers-4.1.16-040116-generic_4.1.16-040116.201601230031_amd64.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.16-wily/linux-headers-4.1.16-040116_4.1.16-040116.201601230031_all.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.16-wily/linux-image-4.1.16-040116-generic_4.1.16-040116.201601230031_amd64.deb
+dpkg -i linux-headers-4.1.16-*.deb linux-image-4.1.16-*.deb
 echo ""
 echo ""
 #Upgrade existing Linux Mint software
