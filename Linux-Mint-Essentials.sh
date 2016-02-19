@@ -149,10 +149,10 @@ cd ..
 chmod 777 Nestopia-ROMS/ -R
 echo ""
 echo ""
-#Download and install the Linux Kernel 4.1.16 LTS
+#Download and install the Linux Kernel 4.1.18 LTS
 #===============================================================================
 echo "*******************************"
-echo "Install Latest LTS (Long Term Support) Linux Kernel v4.1.16 willy"
+echo "Install Latest LTS (Long Term Support) Linux Kernel v4.1.18 willy"
 sleep 2
 echo "..."
 sleep 2
@@ -163,10 +163,10 @@ sleep 2
 echo ""
 echo ""
 cd /tmp/
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.16-wily/linux-headers-4.1.16-040116-generic_4.1.16-040116.201601230031_amd64.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.16-wily/linux-headers-4.1.16-040116_4.1.16-040116.201601230031_all.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.16-wily/linux-image-4.1.16-040116-generic_4.1.16-040116.201601230031_amd64.deb
-dpkg -i linux-headers-4.1.16-*.deb linux-image-4.1.16-*.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.18-wily/linux-headers-4.1.18-040118-generic_4.1.18-040118.201602160131_amd64.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.18-wily/linux-headers-4.1.18-040118_4.1.18-040118.201602160131_all.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.18-wily/linux-image-4.1.18-040118-generic_4.1.18-040118.201602160131_amd64.deb
+dpkg -i linux-headers-4.1.18-*.deb linux-image-4.1.18-*.deb
 echo ""
 echo ""
 #Upgrade existing Linux Mint software
