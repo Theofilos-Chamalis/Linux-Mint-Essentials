@@ -5,7 +5,7 @@
 <p>This script was originally created to set up Linux Mint on my girlfriend's laptop easily and trouble free because even a distro like Linux Mint lacks some essential software and thought I should share it here for anyone to use it freely. Optionally, you can download the image I used for my netbook to create the resulting UI below. Enjoy!
 <br><br><br></p>
 
-![alt tag](https://www.dropbox.com/s/eqhulrjojkmuk7k/Screenshot.png?dl=0)
+![alt tag](https://dl.dropboxusercontent.com/u/25024443/Screenshot.png)
 
 <h3>
 <a id="user-content-run-instructions" class="anchor" href="#run-instructions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run instructions:</h3>
