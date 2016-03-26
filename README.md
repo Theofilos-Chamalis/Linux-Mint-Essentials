@@ -2,7 +2,7 @@
     <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1>
 <a id="user-content-linux-mint-essentials" class="anchor" href="#linux-mint-essentials" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linux-Mint-Essentials</h1>
 
-<p>This script was originally created to set up Linux Mint on my girlfriend's laptop easily and trouble free because even a distro like Linux Mint lacks some essential software and thought I should share it here for anyone to use it freely. Enjoy!
+<p>This script was originally created to set up Linux Mint on my girlfriend's laptop easily and trouble free because even a distro like Linux Mint lacks some essential software and thought I should share it here for anyone to use it freely. Optionally, you can download the image I used for my netbook to create the resulting UI below. Enjoy!
 <br><br><br></p>
 
 <h3>
