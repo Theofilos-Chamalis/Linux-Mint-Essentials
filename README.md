@@ -7,6 +7,8 @@
 
 ![alt tag](https://dl.dropboxusercontent.com/u/25024443/Screenshot.png)
 
+Download image (1366x768 resolution) [here](https://db.tt/BWZyVVMV)!
+
 <h3>
 <a id="user-content-run-instructions" class="anchor" href="#run-instructions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run instructions:</h3>
 
