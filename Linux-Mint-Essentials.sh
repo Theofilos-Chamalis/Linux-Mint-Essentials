@@ -48,22 +48,13 @@ echo ""
 add-apt-repository -y ppa:danielrichter2007/grub-customizer -y
 add-apt-repository -y ppa:teejee2008/ppa -y
 add-apt-repository -y ppa:ubuntu-wine/ppa -y
-add-apt-repository -y ppa:atareao/atareao -y
 add-apt-repository -y ppa:webupd8team/java -y
 add-apt-repository -y ppa:webupd8team/tor-browser -y
 add-apt-repository -y ppa:webupd8team/sublime-text-2 -y
 add-apt-repository -y ppa:numix/ppa -y
+add-apt-repository -y ppa:cairo-dock-team/ppa
 sh -c 'echo "deb http://repository.spotify.com/ stable non-free" > /etc/apt/sources.list.d/spotify.list'
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2C19886 -y
-#Remove old libreoffice and install newest version (works also on Linux Mint)
-#===============================================================================
-apt-get -q -y purge libreoffice*
->/etc/apt/preferences.d/libreoffice-libreoffice-5-0.pref
-chmod 777 libreoffice-libreoffice-5-0.pref
-echo "Package: *" >> /etc/apt/preferences.d/libreoffice-libreoffice-5-0.pref
-echo "Pin: release o=LP-PPA-libreoffice-libreoffice-5-0" >> /etc/apt/preferences.d/libreoffice-libreoffice-5-0.pref
-echo "Pin-Priority: 701" >> /etc/apt/preferences.d/libreoffice-libreoffice-5-0.pref
-add-apt-repository -y ppa:libreoffice/libreoffice-5-0 -y
 echo ""
 echo ""
 #Update sources
@@ -111,8 +102,8 @@ apt-get -q -y install nestopia
 apt-get -q -y install teamviewer
 apt-get -q -y install bleachbit
 apt-get -q -y install filezilla 
-apt-get -q -y install my-weather-indicator
 apt-get -q -y install libreoffice-style-breeze
+apt-get -q -y install cairo-dock cairo-dock-plug-ins
 echo ""
 echo ""
 #Download software directly from internet
@@ -131,15 +122,15 @@ echo ""
 echo ""
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 wget http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
-wget http://mirrors.kernel.org/ubuntu/pool/main/n/ndg-httpsclient/python-ndg-httpsclient_0.3.2-1ubuntu4_all.deb
+wget http://mirrors.kernel.org/ubuntu/pool/main/n/ndg-httpsclient/python-ndg-httpsclient_0.4.0-3_all.deb
 wget http://codingteam.net/project/googleplaydownloader/download/file/googleplaydownloader_1.8-1.deb
 dpkg -i --force-all google-chrome-stable_current_amd64.deb
 dpkg -i --force-all viber.deb
-dpkg -i --force-all python-ndg-httpsclient_0.3.2-1ubuntu4_all.deb
+dpkg -i --force-all python-ndg-httpsclient_0.4.0-3_all.deb
 dpkg -i --force-all googleplaydownloader_1.8-1.deb
 rm -rf google-chrome-stable_current_amd64.deb
 rm -rf viber.deb
-rm -rf python-ndg-httpsclient_0.3.2-1ubuntu4_all.deb
+rm -rf python-ndg-httpsclient_0.4.0-3_all.deb
 rm -rf googleplaydownloader_1.8-1.deb
 mkdir Nestopia-ROMS
 chmod 777 Nestopia-ROMS/ -R
@@ -149,10 +140,10 @@ cd ..
 chmod 777 Nestopia-ROMS/ -R
 echo ""
 echo ""
-#Download and install the Linux Kernel 4.1.18 LTS
+#Download and install the Linux Kernel 4.1.20 LTS
 #===============================================================================
 echo "*******************************"
-echo "Install Latest LTS (Long Term Support) Linux Kernel v4.1.18 willy"
+echo "Install Latest LTS (Long Term Support) Linux Kernel v4.1.20 willy"
 sleep 2
 echo "..."
 sleep 2
@@ -163,10 +154,10 @@ sleep 2
 echo ""
 echo ""
 cd /tmp/
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.18-wily/linux-headers-4.1.18-040118-generic_4.1.18-040118.201602160131_amd64.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.18-wily/linux-headers-4.1.18-040118_4.1.18-040118.201602160131_all.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.18-wily/linux-image-4.1.18-040118-generic_4.1.18-040118.201602160131_amd64.deb
-dpkg -i linux-headers-4.1.18-*.deb linux-image-4.1.18-*.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.20-wily/linux-headers-4.1.20-040120-generic_4.1.20-040120.201603171731_amd64.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.20-wily/linux-headers-4.1.20-040120_4.1.20-040120.201603171731_all.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.20-wily/linux-image-4.1.20-040120-generic_4.1.20-040120.201603171731_amd64.deb
+dpkg -i linux-headers-4.1.20-*.deb linux-image-4.1.20-*.deb
 echo ""
 echo ""
 #Upgrade existing Linux Mint software
