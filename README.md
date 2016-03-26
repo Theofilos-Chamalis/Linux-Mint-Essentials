@@ -27,21 +27,21 @@ Download image (1366x768 resolution) [here](https://db.tt/BWZyVVMV)!
 <li><p>Grub-Customizer (GRUB menu configuring)</p></li>
 <li><p>Wine (run Windows applications on Linux)</p></li>
 <li><p>Oracle java (and makes it default instead of OpenJDK)</p></li>
-<li><p>LibreOffice latest version with new theme (Microsoft Office alternative. The old installed version is removed)</p></li>
+<li><p>LibreOffice breeze theme (Microsoft Office alternative)</p></li>
 <li><p>Bleachbit (CCleaner alternative for Linux to remove junk files and speed up the system)</p></li>
 <li><p>Filezilla (FTP file transfer client)</p></li>
 <li><p>Tor browser (A browser focused on Internet anonymity)</p></li>
 <li><p>Sublime text2 (text editor)</p></li>
 <li><p>Spotify (Music streaming service)</p></li>
-<li><p>Numix theme and icons</p></li>
+<li><p>Numix theme and icons for a modern desktop feel</p></li>
 <li><p>Skype (VoIP client and video chat)</p></li>
 <li><p>Teamviewer (Remote PC control)</p></li>
 <li><p>Nestopia (NES emulator and Super Mario Bros ROM)</p></li>
 <li><p>Google Chrome (Google's web browser)</p></li>
 <li><p>Viber (A very popular instant messaging client that can be synced with mobile devices)</p></li>
 <li><p>GooglePlayDownloader (A very easy way to download Android apks from Google Play store to the PC)</p></li>
-<li><p>My-weather-indicator (weather widget which can be docked on the desktop or the taskbar and has many UI and functionality options to suit your needs)</p></li>
-<li><p>Linux Kernel version 4.1.18 willy LTS (Long Term Support)
+<li><p>Cairo Dock (An app drawer dock on the bottom of the screen for a Mac OSX feel)
+<li><p>Linux Kernel version 4.1.20 willy LTS (Long Term Support)
 <br><br></p></li>
 </ul>
 <p><em>*Also it upgrades all the included packages and programs of your system to the latest version</em></p>
