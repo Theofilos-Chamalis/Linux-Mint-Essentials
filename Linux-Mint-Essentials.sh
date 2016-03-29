@@ -92,6 +92,7 @@ apt-get -q -y install wine1.8
 apt-get -q -y install oracle-java8-installer oracle-java8-set-default
 apt-get -q -y install tor-browser
 apt-get -q -y install sublime-text
+apt-get -q -y install ucaresystem-core
 apt-get -q -y install skype
 apt-get -q -y install numix-icon-theme-circle
 apt-get -q -y install numix-icon-themebevel
@@ -105,7 +106,6 @@ apt-get -q -y install bleachbit
 apt-get -q -y install filezilla 
 apt-get -q -y install libreoffice-style-breeze
 apt-get -q -y install cairo-dock cairo-dock-plug-ins
-apt-get -q -y install ucaresystem-core
 echo ""
 echo ""
 #Download software directly from internet
@@ -197,9 +197,9 @@ echo "."
 sleep 2
 echo ""
 echo ""
-echo "*****************"
+echo "******************"
 echo "Bye!!!"
-echo "*****************"
+echo "******************"
 echo ""
 echo ""
 reboot
