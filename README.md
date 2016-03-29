@@ -41,6 +41,7 @@ Download image (1366x768 resolution) [here](https://db.tt/BWZyVVMV)!
 <li><p>Viber (A very popular instant messaging client that can be synced with mobile devices)</p></li>
 <li><p>GooglePlayDownloader (A very easy way to download Android apks from Google Play store to the PC)</p></li>
 <li><p>Cairo Dock (An app drawer dock on the bottom of the screen for a Mac OSX feel)
+<li><p>uCareSystem Core (A maintenance program that cleans your pc: refresh your packagelist, download and install updates (if there are any), remove any old kernels, obsolete packages and configuration files to free up disk space, [just run it by typing sudo ucaresystem-core])</p></li> 
 <li><p>Linux Kernel version 4.1.20 willy LTS (Long Term Support)
 <br><br></p></li>
 </ul>
