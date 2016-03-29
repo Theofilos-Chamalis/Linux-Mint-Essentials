@@ -53,6 +53,7 @@ add-apt-repository -y ppa:webupd8team/tor-browser -y
 add-apt-repository -y ppa:webupd8team/sublime-text-2 -y
 add-apt-repository -y ppa:numix/ppa -y
 add-apt-repository -y ppa:cairo-dock-team/ppa
+add-apt-repository -y ppa:utappia/stable
 sh -c 'echo "deb http://repository.spotify.com/ stable non-free" > /etc/apt/sources.list.d/spotify.list'
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2C19886 -y
 echo ""
@@ -104,6 +105,7 @@ apt-get -q -y install bleachbit
 apt-get -q -y install filezilla 
 apt-get -q -y install libreoffice-style-breeze
 apt-get -q -y install cairo-dock cairo-dock-plug-ins
+apt-get -q -y install ucaresystem-core
 echo ""
 echo ""
 #Download software directly from internet
