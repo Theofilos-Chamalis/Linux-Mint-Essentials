@@ -142,10 +142,10 @@ cd ..
 chmod 777 Nestopia-ROMS/ -R
 echo ""
 echo ""
-#Download and install the Linux Kernel 4.1.20 LTS
+#Download and install the Linux Kernel 4.1.22 LTS
 #===============================================================================
 echo "*******************************"
-echo "Install Latest LTS (Long Term Support) Linux Kernel v4.1.20 willy"
+echo "Install Latest LTS (Long Term Support) Linux Kernel v4.1.22 willy"
 sleep 2
 echo "..."
 sleep 2
@@ -156,10 +156,10 @@ sleep 2
 echo ""
 echo ""
 cd /tmp/
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.20-wily/linux-headers-4.1.20-040120-generic_4.1.20-040120.201603171731_amd64.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.20-wily/linux-headers-4.1.20-040120_4.1.20-040120.201603171731_all.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.20-wily/linux-image-4.1.20-040120-generic_4.1.20-040120.201603171731_amd64.deb
-dpkg -i linux-headers-4.1.20-*.deb linux-image-4.1.20-*.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.22-wily/linux-headers-4.1.22-040122-generic_4.1.22-040122.201604200432_amd64.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.22-wily/linux-headers-4.1.22-040122_4.1.22-040122.201604200432_all.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.22-wily/linux-image-4.1.22-040122-generic_4.1.22-040122.201604200432_amd64.deb
+dpkg -i linux-headers-4.1.22-*.deb linux-image-4.1.22-*.deb
 echo ""
 echo ""
 #Upgrade existing Linux Mint software
