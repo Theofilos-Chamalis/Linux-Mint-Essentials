@@ -9,7 +9,7 @@ Enjoy!
 
 ![alt tag](https://forum.manjaro.org/uploads/default/original/2X/2/256cd7a3af9fe5c436cfe56ac201a53254dc1723.png)
 
-Download image (1366x768 resolution) [here](https://forum.manjaro.org/uploads/default/original/2X/2/256cd7a3af9fe5c436cfe56ac201a53254dc1723.png)!
+Download image (1920x1080 resolution) [here](https://forum.manjaro.org/uploads/default/original/2X/2/256cd7a3af9fe5c436cfe56ac201a53254dc1723.png)!
 
 <h3>
 <a id="user-content-run-instructions" class="anchor" href="#run-instructions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run instructions:</h3>
