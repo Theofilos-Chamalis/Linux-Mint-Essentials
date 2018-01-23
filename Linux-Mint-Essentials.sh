@@ -158,10 +158,10 @@ cd ..
 sudo chmod +x Nestopia-ROMS/ -R
 echo ""
 echo ""
-#Download and install the latest stable Linux Kernel 4.13.12
+#Download and install the latest stable Linux Kernel 4.14.15
 #===============================================================================
 echo "*******************************"
-echo "Install Latest Stable Linux Kernel v4.13.12"
+echo "Install Latest Stable Linux Kernel v4.14.15"
 sleep 2
 echo "..."
 sleep 2
@@ -181,8 +181,8 @@ sleep 2
 echo "."
 echo ""
 echo ""
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.13.12/linux-headers-4.13.12-041312_4.13.12-041312.201711080535_all.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.13.12/linux-headers-4.13.12-041312-generic_4.13.12-041312.201711080535_amd64.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.14.15/linux-headers-4.14.15-041415_4.14.15-041415.201801231530_all.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.14.15/linux-headers-4.14.15-041415-generic_4.14.15-041415.201801231530_amd64.deb
 echo ""
 echo ""
 echo "Downloading kernel image.."
@@ -194,7 +194,7 @@ sleep 2
 echo "."
 echo ""
 echo ""
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.13.12/linux-image-4.13.12-041312-generic_4.13.12-041312.201711080535_amd64.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.14.15/linux-image-4.14.15-041415-generic_4.14.15-041415.201801231530_amd64.deb
 echo "----------------------------------------"
 echo ""
 echo ""
